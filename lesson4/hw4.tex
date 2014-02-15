@@ -1,0 +1,95 @@
+\documentclass[12pt,russian,draft]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage[final]{listings}
+\usepackage{fancyvrb}
+
+\title{Домашняя работа 4}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Для каждого задания в работе необходимо написать программу. Каждая
+    программа должна выводить на экран результаты с поясняющими словами на
+    английском языке, например: The area of the disc with radius r = 5 equals
+    78.5.}
+
+1. Выполнить следующую программу:
+\begin{lstlisting}
+    program error;
+    uses crt;
+    var
+        i1: Integer;
+        i2: Integer;
+        i3: Integer;
+    begin
+        i1 := 30000;
+        i2 := 30000;
+        i3 := i1 + i2;
+
+        WriteLn(i1, ' + ', i2, ' = ', i3);
+        ReadKey;
+    end.
+\end{lstlisting}
+
+Подумать, почему программа даёт, на первый взгляд, ошибочный ответ. Исправить
+программу так, чтобы она давала правильный ответ.
+
+2. (Культин56). Написать программу вычисления стоимости покупки, состоящей из
+тет\-ра\-дей и~ка\-рандашей. Программа должна работать следующим образом:
+
+\begin{verbatim}
+Calculating the cost of buying exercise books and pencils.
+Enter the number of exercise books: <пользователь вводит количество тетрадей>
+Enter the price of an exercise book: <пользователь вводит цену тетради>
+Enter the number of pencils: <пользователь вводит количество карандашей>
+Enter the price of a pencil: <пользователь вводит цену карандаша>
+\end{verbatim}
+
+Затем программа вычисляет результат и~выводит его.
+
+3. (Культин59) Написать программу вычисления площади треугольника, если
+известна длина основания и~высота. Ниже представлен рекомендуемый интерфейс
+взаимодействия с~пользователем:
+
+\begin{verbatim}
+Calculating the area of a triangle.
+Enter the base (cm): <пользователь вводит длину основания>
+Enter the height (cm): <пользователь вводит высоту>
+
+The area is <result> sq. cm.
+\end{verbatim}
+
+4. (Культин60) Написать программу вычисления площади треугольника, если
+известны длины двух его сторон и~величина угла между этими сторонами. Ниже
+представлен реко\-мен\-ду\-емый вид экрана во время работы программы (данные,
+введенные пользователем, выделены курсивом).
+
+\begin{Verbatim}[commandchars=\|\{\}]
+Calculating the area of a triangle.
+Enter first side (cm): |emph{25}
+Enter second side (cm): |emph{17}
+Enter angle between sides: |emph{30}
+
+The area of the triangle: 106.25 sq. cm.
+\end{Verbatim}
+
+5. (Культин72) Написать программу пересчёта величины временного интервала,
+задан\-ного в минутах, в~величину, выраженную в~часах и~минутах. Ниже представлен
+ре\-ко\-мен\-ду\-емый вид экрана во время работы программы (данные,
+введенные пользователем, выделены курсивом).
+
+\begin{Verbatim}[commandchars=\|\{\}]
+Enter time interval in minutes: |emph{150}
+
+150 minutes are 2 h 30 min
+\end{Verbatim}
+
+6. Написать программу, которая спрашивает у пользователя целое число $x$,
+а~затем выводит на экран результат вычисления $x+1$, $x+20$, $x-1$, $x-10$. Для
+вычислений использовать операторы инкремента и декремента. (Подсказка:
+понадобится дополнительная переменная, которая будет хранить исходное значение,
+введённое пользователем.)
+
+\end{document}
