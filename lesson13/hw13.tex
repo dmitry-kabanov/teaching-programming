@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt,draft]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 13}
+\date{}
+\begin{document}
+\maketitle{}
+
+\begin{problem}{Семакин4.1.29}
+    Составить алгоритм решения ребуса ДРУГ - ГУРД = 2727 (здесь различные
+    буквы означают различные цифры, а первая буква~--- не ноль).
+\end{problem}
+
+\begin{problem}{Семакин4.1.30}
+    Составить алгоритм решения ребуса КОТ + КОТ = ТОК (здесь различные буквы
+    означают различные цифры, а первая буква~--- не ноль).
+\end{problem}
+
+\begin{problem}{Семакин4.2.2}
+    Дано натуральное число $N$. Вычислить
+    \[
+        S = \frac{1}{\sin 1} + \frac{1}{\sin 1 + \sin 2} + \dots +
+            \frac{1}{\sin 1 + \sin 2 + \dots + \sin N}. 
+    \]
+\end{problem}
+
+\begin{problem}{Семакин4.2.5}
+    Дано действительное число $x$. Вычислить выражение
+    \[
+        x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} +
+        \frac{x^9}{9!} - \frac{x^{11}}{11!} + \frac{x^{13}}{13!}.    
+    \]
+\end{problem}
+
+\begin{problem}{Семакин4.2.7}
+    Дано действительное число $a$ и натуральное число $n$. Вычислить
+    \[
+        P = a (a + 1) \times \dots \times (a + n - 1).
+    \]
+\end{problem}
+
+\begin{problem}{Семакин4.2.8}
+    Дано действительное число $a$ и натуральное число $n$. Вычислить
+    \[
+        P = a (a - n) (a - 2n) \times \dots \times (a - n^2).
+    \]
+\end{problem}
+
+\end{document}
