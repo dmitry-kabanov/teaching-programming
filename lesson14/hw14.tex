@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt,draft]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 14}
+\date{}
+\begin{document}
+\maketitle{}
+
+\begin{problem}{Семакин4.2.15}
+    Дано натуральное число $n$. Вычислить
+    \[
+        P = \left(1 - \frac{1}{2} \right) \left( 1 - \frac{1}{4} \right)
+            \left(1 - \frac{1}{6} \right) \times \dots \times 
+            \left( 1 - \frac{1}{2n} \right).
+    \]
+\end{problem}
+
+\begin{problem}{Семакин4.2.16}
+    Дано натуральное число $n > 1$. Вычислить
+    \[
+        S = 1! + 2! + 3! + \dots + n!.
+    \]
+\end{problem}
+
+\begin{problem}{Семакин4.2.19}
+    Числа Фибоначчи определяются формулами $f_0 = 1$, $f_1 = 1$, $f_k = f_{k-1}
+    + f_{k-2}$ при $k = 2, 3, \dots$. Найти $f_p$ для заданного $p$.
+\end{problem}
+
+\begin{problem}{Семакин4.5.2м}
+    Найти минимальный элемент последовательности. Пользователь должен вводить
+    число элементов последовательности, элементы же должны генерироваться с
+    помощью генератора случайных чисел. Программа должна выводить саму
+    последовательность чисел, а затем минимальный элемент.
+\end{problem}
+
+\end{document}
