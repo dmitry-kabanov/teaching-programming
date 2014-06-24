@@ -1,0 +1,46 @@
+\documentclass[a4paper,12pt,draft]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 15}
+\date{}
+\begin{document}
+\maketitle{}
+
+\begin{problem}{Семакин4.5.20}
+    В последовательности натуральных чисел подсчитать количество чисел,
+    оканчивающихся заданной цифрой. Последовательность генерировать с помощью
+    генератора случайных чисел.
+\end{problem}
+
+\begin{problem}{Семакин4.5.29}
+    Определить, между какими степенями двойки расположены элементы
+    последовательности. Последовательность генерировать с помощью генератора
+    случайных чисел. Для каждого числа нужно выводить степени двойки, между
+    которыми это число расположено.
+\end{problem}
+
+\begin{problem}{Семакин5.А.9}
+    Найти наибольшую и наименьшую цифры в записи заданного натурального числа.
+\end{problem}
+
+\begin{problem}{Семакин5.А.15}
+    Дано натуральное число $N$. Найти и вывести все числа в интервале от 1 до
+    $N$, у которых сумма цифр совпадает с суммой цифр заданного числа. Если
+    таких чисел нет, то вывести слово <<нет>>. Например, при $N=44$
+    выводятся числа 17, 26 и~35.
+\end{problem}
+
+\end{document}
