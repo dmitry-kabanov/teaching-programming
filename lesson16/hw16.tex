@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt,draft]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 16}
+\date{}
+\begin{document}
+\maketitle{}
+
+\begin{problem}{Культин134}
+    Написать программу, которая <<задумывает>> число в диапазоне от~1 до~10
+    включительно и~предлагает пользователю угадать число за 5~попыток.
+    Рекомендуемый вид экрана во время работы программы:
+
+    \selectlanguage{english}
+    \begin{Verbatim}[commandchars=\\\{\}]
+    Guess Number game.
+    Computer "picked up" a secret number from 1 to 10 inclusive.
+    You must guess this number. Max number of trials is 5.
+    1. Enter your guess: \userinput{5}
+    Too low.
+    2. Enter your guess: \userinput{9}
+    Too high.
+    3. Enter your guess: \userinput{6}
+    You win!
+    \end{Verbatim}
+    \selectlanguage{russian}
+    
+\end{problem}
+
+\begin{problem}{Культин136}
+    Написать программу, которая вычисляет $\pi$ с заданной пользователем
+    точностью. Для этого воспользуйтесь тем, что значение частичной суммы ряда
+    $1 - 1/3 + 1/5 - 1/7 + 1/9 - \dots$ при суммировании достаточно большого
+    количества членов приближается к $\pi / 4$. Рекомендуемый вид экрана
+    (значения, введённые пользователем выделены полужирным шрифтом):
+
+    \selectlanguage{english}
+    \begin{Verbatim}[commandchars=\\\{\}]
+        Enter precision of PI computation: \userinput{0.001}
+        The value of PI with precision 0.001000 is equal to 3.141589
+        502 terms of series was summed.
+    \end{Verbatim}
+    \selectlanguage{russian}
+
+\end{problem}
+
+\begin{problem}{Семакин5.B.5}
+    Натуральное число называется совершенным, если оно равно сумме всех своих
+    делителей, включая единицу, но исключая само это число. Напечатать все
+    совершенные числа, которые меньше заданного числа $N$.
+\end{problem}
+
+\begin{problem}{Семакин5.B.11}
+    Найти наименьшее натуральное число $n$, которое можно представить в виде
+    суммы кубов двух натуральных чисел.
+\end{problem}
+
+\begin{problem}{Семакин5.B.20}
+    Последовательность Хэмминга образуют натуральные числа, не имеющие других
+    простых делителей кроме 2, 3 и 5. Найти первые $N$ членов этой
+    последовательности и сумму этих членов.
+\end{problem}
+
+\begin{problem}{Семакин5.B.23}
+    Дано натуральное число $N$. Получить новое число $M$ посредством замены
+    последней цифры числа $N$ наименьшей цифрой в~его записи. Например, если
+    дано $N = 128452$, то $M = 128458$.
+\end{problem}
+
+\end{document}
