@@ -1,0 +1,39 @@
+\documentclass[a4paper,12pt,draft]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 19}
+\date{}
+\begin{document}
+\maketitle{}
+
+\begin{problem}{моя}
+    Написать программу, которая считывает последовательность целых чисел
+    с~клавиатуры, а затем подсчитывает сумму тех из этих чисел, которые
+    являются простыми.  Количество чисел в последовательности не определено
+    заранее. Для того, чтобы пользователь мог закончить ввод, нужно
+    использовать sentinel.
+\end{problem}
+
+\begin{problem}{Семакин5.C.14}
+    Дано натуральное число $n$. Если это не палиндром, реверсировать его цифры
+    и сложить исходное число с числом, полученным в результате реверсирования.
+    Если полученная при этом сумма не палиндром, то повторять указанные
+    действия до тех пор, пока не получится палиндром. Например, для исходного
+    числа 78 запишем: $78 + 87 = 165$; $165 + 561 = 726$; $726 + 627 = 1353$;
+    $1353 + 3531 = 4884$. Число 4884 является палиндромом.
+\end{problem}
+
+\end{document}
