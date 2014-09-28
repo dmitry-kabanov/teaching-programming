@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 21}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах размер экрана $640 \times 480$. Эти числа должны
+    задаваться в виде констант в начале программы.}
+
+\begin{problem}{ASoJ, p.54, 4}
+    Написать программу, которая рисует домик, как показано
+    на~рисунке~\ref{fig:p1}.
+\end{problem}
+
+\begin{figure}
+\noindent\centering{
+\includegraphics{p1.pdf}
+}
+\caption{Иллюстрация к задаче 1}
+\label{fig:p1}
+\end{figure}
+
+\begin{problem}{ASoJ, p. 54, 5}
+    Написать программу, которая рисует лицо робота, как показано
+    на~рисунке~\ref{fig:p2}.
+    Глаза должны быть оранжевыми, нос чёрным, рот белым. Лицо робота должно
+    быть светло-серого цвета.
+\end{problem}
+
+\begin{figure}
+\noindent\centering{
+\includegraphics{p2.pdf}
+}
+\caption{Иллюстрация к задаче 2}
+\label{fig:p2}
+\end{figure}
+
+\begin{problem}{ASoJ, p. 54, 6}
+    Написать программу, которая рисует изображение мишени, как показано
+    на~рисунке~\ref{fig:p3}. Внешний и внутренний круги должны быть красного
+    цвета.
+\end{problem}
+
+\begin{figure}
+\noindent\centering{
+\includegraphics{p3.pdf}
+}
+\caption{Иллюстрация к задаче 3}
+\label{fig:p3}
+\end{figure}
+
+\end{document}
