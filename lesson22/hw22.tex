@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 22}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах размер экрана $640 \times 480$. Эти числа должны
+    задаваться в виде констант в начале программы.}
+
+\begin{problem}{ASoJ, p. 130, 14}
+    Доработать программу, которая выводит шахматную доску, так, чтобы она также
+    рисовала начальное положение шашек. Шашки нарисовать кругами - чёрными
+    с~заливкой и без заливки.
+\end{problem}
+
+\begin{problem}{ASoJ, p. 55, 7}
+    Написать программу, которая рисует символ Олимпиады.
+\end{problem}
+
+\begin{problem}{ASoJ, p. 130, 11}
+    Написать программу, которая рисует пирамиду из кирпичей, как показано
+    на~рисунке~\ref{fig:p3}. Пирамида состоит из горизонтальных рядов
+    кирпичей, количество кирпичей уменьшается на единицу в каждом ряде. Размер
+    кирпича должен задаваться константами в начале программы:
+    \texttt{BRICK\_WIDTH}, \texttt{BRICK\_HEIGHT}.
+\end{problem}
+
+\begin{figure}
+\noindent\centering{
+\includegraphics{p3.pdf}
+}
+\caption{Иллюстрация к задаче 3.}
+\label{fig:p3}
+\end{figure}
+
+\end{document}
