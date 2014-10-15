@@ -1,0 +1,63 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 23}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах размер экрана $640 \times 480$. Эти числа должны
+    задаваться в виде констант в начале программы.}
+
+\begin{problem}{Культин, 196}
+    Написать программу, которая вычерчивает на экране кораблик, как показано
+    на рисунке~\ref{fig:ship}.
+\end{problem}
+
+\begin{problem}{Культин, 197}
+    Написать программу, которая вычерчивает на экране ракету, как показано на
+    рисунке~\ref{fig:rocket}.
+\end{problem}
+
+\begin{problem}{Культин, 199}
+    Написать программу, которая вычерчивает на экране узор из 100 окружностей
+    случайного диаметра и цвета.
+\end{problem}
+
+\begin{problem}{Культин, 200}
+    Написать программу, которая вычерчивает на экране узор ломаную линию,
+    состоящую из 200 звеньев, окрашеных в разные цвета, выбираемые случайным
+    образом, причём координаты звеньев тоже выбираются случайно.
+\end{problem}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics{ship.pdf}
+  \caption{Иллюстрация к задаче 1.}
+  \label{fig:ship}
+\end{minipage}\hfill
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics{rocket.pdf}
+  \caption{Иллюстрация к задаче 2.}
+  \label{fig:rocket}
+\end{minipage}
+\end{figure}
+
+\end{document}
