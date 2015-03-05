@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 29}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах рекомендую выделять логику обработки данных в
+    функции. Можешь использовать глобальные массивы.}
+
+\begin{problem}{Культин153}
+    Написать программу, которая вводит с клавиатуры одномерный массив из 5
+    целых чисел и выводит количество ненулевых элементов. Перед вводом каждого
+    элемента на экране должна появляться подсказка с его номером.
+
+    \selectlanguage{english}
+    \begin{Verbatim}[commandchars=\\\{\}]
+    Program counts the number of non-zero elements in the array of 5 integers.
+    After entering number press Enter.
+    a[1] -> \userinput{12}
+    a[2] -> \userinput{0}
+    a[3] -> \userinput{3}
+    a[4] -> \userinput{-1}
+    a[5] -> \userinput{0}
+
+    There are 3 non-zero elements in the array.
+    \end{Verbatim}
+    \selectlanguage{russian}
+\end{problem}
+
+\begin{problem}{Культин154}
+    Написать программу, которая выводит минимальный элемент введённого с
+    клавиатуры массива целых чисел.
+\end{problem}
+
+\begin{problem}{Культин157}
+    Написать программу, которая проверяет, находится ли в массиве введённое с
+    клавиатуры число. Массив должен вводится во время работы программы, затем
+    программа должна запрашивать искомое число.
+\end{problem}
+
+\begin{problem}{Культин158}
+    Написать программу, которая проверяет, представляют ли элементы
+    введённого массива возрастающую последовательность.
+\end{problem}
+
+\begin{problem}{Культин159}
+    Написать программу, которая проверяет, представляют ли элементы
+    введённого массива убывающую последовательность.
+\end{problem}
+
+\begin{problem}{Культин160}
+    Написать программу, которая проверяет, сколько раз заданное число
+    встречается в массиве целых чисел.
+\end{problem}
+
+\end{document}
