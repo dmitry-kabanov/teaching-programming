@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 27}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах требуется написание собственных функций. Функции
+    используются для разбиения задачи на подзадачи.}
+
+\begin{problem}{Семакин, 6.1.А.1}
+    Треугольник задан координатами своих вершин. Вычислить его площадь.
+    Внутренняя организация программа такова: программа должна принимать от
+    пользователя координаты вершин и выводить на экран площадь. Программа
+    должна содержать две функции: одна вычисляет площадь, а вторая вычисляет
+    стороны по координатам.
+\end{problem}
+
+\begin{problem}{Семакин, 6.1.А.2}
+    Найти наибольший общий делитель и наименьшее общее кратное двух
+    натуральных чисел, если дана формула
+
+    \[
+        НОК(A, B) = \frac{A \cdot B}{НОД(A, B)}.
+    \]
+\end{problem}
+
+\begin{problem}{Семакин, 6.1.А.5}
+    Найти сумму большего и меньшего из трёх чисел.
+\end{problem}
+
+\end{document}
