@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 31}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах рекомендую выделять логику обработки данных в
+    функции. Можешь использовать глобальные массивы.}
+
+\begin{problem}{Семакин7.A.15}
+    Дана последовательность чисел, среди которых имеется один нуль. Вывести на
+    печать все числа до нуля включительно.
+\end{problem}
+
+\begin{problem}{Семакин7.A.19}
+    Дан целочисленный массив с количеством элементов $n$ (это число вводится
+    пользователем, а сам массив генерируется с помощью генератора случайных
+    чисел).  Вывести на печать те элементы массива, индексы которых являются
+    степенями двойки: 1, 2, 4, 8$\dots$
+\end{problem}
+
+\begin{problem}{Семакин7.A.21}
+    Дана последовательность из $N$ вещественных чисел. Вычислить
+    \[
+        \sigma= \sqrt{\frac{1}{N} \sum_{i=1}^{N} \left(x_i - M \right)^2},
+    \]
+    где $M$~--- среднее арифметическое всех элементов массива, $x_i$~--- $i$-ый
+    элемент массива. Величина $\sigma$ называется среднеквадратическим
+    отклонением.  Среднеквадратическое отклонение показывает, насколько
+    разбросаны значения в последовательности чисел вокруг среднего значения.
+    Чем выше величина среднеквадратического отклонения, тем больше разброс.
+\end{problem}
+
+\begin{problem}{Семакин7.A.28}
+    Заполнить массив из $N$ элементов с начальным заданным значением A[0]
+    $\neq$ 0 по принципу: A[i] = A[i div 2] + A[i-1].
+\end{problem}
+
+\end{document}
