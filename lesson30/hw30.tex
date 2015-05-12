@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\newcommand\userinput[1]{\textbf{#1}}
+
+\newcounter{problemnumber}
+
+\newenvironment{problem}[1]
+	{\addtocounter{problemnumber}{1}\arabic{problemnumber}. (#1)}
+	{\vspace{6pt}}
+
+\title{Домашняя работа 30}
+\date{}
+\begin{document}
+\maketitle{}
+
+\emph{Во всех программах рекомендую выделять логику обработки данных в
+    функции. Можешь использовать глобальные массивы.}
+
+\begin{problem}{Культин166}
+    Написать программу, которая определяет количество учеников в классе, чей
+    рост превышает средний. Рекомендуемый вид экрана во время работы программы
+    приведён ниже (введённые пользователем данные выделены полужирным
+    начертанием).
+
+    \selectlanguage{english}
+    \begin{Verbatim}[commandchars=\\\{\}]
+        Program analyses the heights of pupils. To finish enter 0.
+        -> \userinput{175}
+        -> \userinput{170}
+        -> \userinput{180}
+        -> \userinput{168}
+        -> \userinput{170}
+        -> \userinput{0}
+
+        The average height is 172.6 cm.
+        2 pupils are taller than average height.
+    \end{Verbatim}
+    \selectlanguage{russian}
+\end{problem}
+
+\begin{problem}{Семакин7.A.6}
+    Дана последовательность чисел $a_1, a_2, \dots, a_n$. Указать диапазон,
+    в~котором находятся эти числа.
+\end{problem}
+
+\begin{problem}{Семакин7.A.7}
+    Дана последовательность целых чисел $a_1, a_2, \dots, a_n$. Заменить все
+    члены, которые больше заданного числа $Z$, этим числом. Вывести
+    получившийся массив и количество сделанных замен.
+\end{problem}
+
+\begin{problem}{Семакин7.A.9}
+    Дан массив действительных чисел. Определить, сколько в нём отрицательных,
+    положительных и нулевых элементов.
+\end{problem}
+
+\begin{problem}{Семакин7.A.10}
+    Дан массив целых чисел. Поменять местами наибольшее и наименьшее из этих
+    чисел и вывести получившийся массив на экран.
+\end{problem}
+
+\begin{problem}{Семакин7.A.13}
+    В заданном массиве целых чисел поменять местами соседние элементы, стоящие
+    на чётных местах, с элементами, стоящими на нечётных местах.
+\end{problem}
+
+\end{document}
